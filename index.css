@@ -1,0 +1,93 @@
+h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: clamp(28px, 5vw, 50px);
+    margin-top: 20px;
+}
+
+body {
+    background: linear-gradient(to top, #ffffff, #ffffff);
+    margin: 0;
+}
+
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 90%;
+    height: auto;
+    border-radius: 25px;
+    padding-top: 10px;
+}
+
+h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: clamp(20px, 4vw, 35px);
+    margin-top: 20px;
+}
+
+h3 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: clamp(16px, 3vw, 25px);
+    margin-top: 20px;
+}
+
+p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: clamp(16px, 3vw, 25px);
+    margin: 0 auto;
+    max-width: 900px;
+    padding: 0 15px;
+    margin-top: 20px;
+}
+
+.discord,
+.tiktok,
+.instagram {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: clamp(18px, 3vw, 35px);
+    text-decoration: none;
+    border-radius: 25px;
+    border: 3px solid;
+    padding: 10px;
+    display: inline-block;
+    width: min(275px, 80%);
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 15px;
+}
+
+.discord { color: #0072ec; border-color: #0072ec; }
+.tiktok { color: #0f0f0f; border-color: #0f0f0f; }
+.instagram { color: #ff49b0; border-color: #ff49b0; }
+
+.discord:hover { background-color: #0072ec; color: white; scale: 1.05;}
+.tiktok:hover { background-color: #0f0f0f; color: white; scale: 1.05;}
+.instagram:hover { background-color: #ff49b0; color: white; scale: 1.05;}
+
+.discord:active,
+.tiktok:active,
+.instagram:active {
+    transform: scale(0.95);
+}
+
+@media (max-width: 500px) {
+    .logo {
+        max-width: 100%;
+        border-radius: 15px;
+    }
+}
+
+footer {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: clamp(14px, 2vw, 20px);
+    margin-top: 20px;
+    padding: 10px;
+    color: #b9b9b9;
+    background-color: #090a1f;
+}
