@@ -25,6 +25,7 @@ h2 {
     text-align: center;
     font-size: clamp(20px, 4vw, 35px);
     margin-top: 20px;
+    color: white;
 }
 
 h3 {
@@ -32,6 +33,7 @@ h3 {
     text-align: center;
     font-size: clamp(16px, 3vw, 25px);
     margin-top: 20px;
+    color: white;
 }
 
 p {
@@ -39,9 +41,10 @@ p {
     text-align: center;
     font-size: clamp(16px, 3vw, 25px);
     margin: 0 auto;
-    max-width: 900px;
+    max-width: 1500px;
     padding: 0 15px;
     margin-top: 20px;
+    color: white;
 }
 
 .discord,
@@ -55,7 +58,7 @@ p {
     border: 3px solid;
     padding: 10px;
     display: inline-block;
-    width: min(275px, 80%);
+    width: min(325px, 80%);
     transition: all 0.3s ease;
     box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
     margin-bottom: 15px;
@@ -90,4 +93,95 @@ footer {
     padding: 10px;
     color: #b9b9b9;
     background-color: #090a1f;
+    height: 240px;
+}
+
+.about {
+    width: 1500px;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    background-color: #5bb0ff;
+    border-radius: 25px;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.2);
+    outline: auto 10px rgba(0, 0, 0, 0.25);
+}
+
+.projects {
+    width: 1500px;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    background-color: #ff5858;
+    border-radius: 25px;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.2);
+    outline: auto 10px rgba(0, 0, 0, 0.25);
+}
+
+.updates {
+    width: 1500px;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    background-color: #ff9853;
+    border-radius: 25px;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.2);
+    outline: auto 10px rgba(0, 0, 0, 0.25);
+}
+
+.team {
+    width: 1500px;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    background-color: #4dff47;
+    border-radius: 25px;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.2);
+    outline: auto 10px rgba(0, 0, 0, 0.25);
+}
+
+.footerdc {
+    color: #0072ec;
+    text-decoration: none;
+    transition: color 0.3s ease, scale 0.3s ease;
+}
+
+.footerdc:hover {
+    color: white;
+}
+
+.footertt {
+    color: #9316c5;
+    text-decoration: none;
+    transition: color 0.3s ease, scale 0.3s ease;
+}
+
+.footertt:hover {
+    color: rgb(255, 255, 255);
+}
+
+.footerig {
+    color: #ff49b0;
+    text-decoration: none;
+    transition: color 0.3s ease, scale 0.3s ease;
+}
+
+.footerig:hover {
+    color: white;
+}
+
+.navbar {
+    background-color: #c9c9c9;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
