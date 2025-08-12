@@ -13,39 +13,26 @@ body {
 
 .logo {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 10px auto 0;
     max-width: 90%;
     height: auto;
     border-radius: 25px;
-    padding-top: 10px;
 }
 
-h2 {
+h2, h3, p {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
-    font-size: clamp(20px, 4vw, 35px);
     margin-top: 20px;
     color: white;
 }
 
-h3 {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-align: center;
-    font-size: clamp(16px, 3vw, 25px);
-    margin-top: 20px;
-    color: white;
-}
+h2 { font-size: clamp(20px, 4vw, 35px); }
+h3, p { font-size: clamp(16px, 3vw, 25px); }
 
 p {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-align: center;
-    font-size: clamp(16px, 3vw, 25px);
     margin: 0 auto;
-    max-width: 1500px;
+    max-width: 1000px;
     padding: 0 15px;
-    margin-top: 20px;
-    color: white;
 }
 
 .discord,
@@ -80,10 +67,7 @@ p {
 }
 
 @media (max-width: 500px) {
-    .logo {
-        max-width: 100%;
-        border-radius: 15px;
-    }
+    .logo { border-radius: 15px; }
 }
 
 footer {
@@ -94,79 +78,34 @@ footer {
     padding: 10px;
     color: #b9b9b9;
     background-color: #090a1f;
-    height: 240px;
+    height: auto;
 }
 
-.about {
-    width: 1500px;
-    margin: 0 auto;
-    padding-top: 10px;
-    padding-bottom: 50px;
-    background-color: #5bb0ff;
+.about, .projects, .updates, .team {
+    max-width: 95%;
+    margin: 20px auto;
+    padding: 10px 15px 50px;
     border-radius: 25px;
     box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.2);
     outline: auto 10px rgba(0, 0, 0, 0.25);
 }
 
-.projects {
-    width: 1500px;
-    margin: 0 auto;
-    padding-top: 10px;
-    padding-bottom: 50px;
-    background-color: #ff5858;
-    border-radius: 25px;
-    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.2);
-    outline: auto 10px rgba(0, 0, 0, 0.25);
-}
+.about { background-color: #5bb0ff; }
+.projects { background-color: #ff5858; }
+.updates { background-color: #ff9853; }
+.team { background-color: #4dff47; }
 
-.updates {
-    width: 1500px;
-    margin: 0 auto;
-    padding-top: 10px;
-    padding-bottom: 50px;
-    background-color: #ff9853;
-    border-radius: 25px;
-    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.2);
-    outline: auto 10px rgba(0, 0, 0, 0.25);
-}
-
-.team {
-    width: 1500px;
-    margin: 0 auto;
-    padding-top: 10px;
-    padding-bottom: 50px;
-    background-color: #4dff47;
-    border-radius: 25px;
-    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.2);
-    outline: auto 10px rgba(0, 0, 0, 0.25);
-}
-
-.footerdc {
-    color: #0072ec;
+.footerdc, .footertt, .footerig {
     text-decoration: none;
     transition: color 0.3s ease, scale 0.3s ease;
 }
 
-.footerdc:hover {
-    color: white;
-}
+.footerdc { color: #0072ec; }
+.footertt { color: #9316c5; }
+.footerig { color: #ff49b0; }
 
-.footertt {
-    color: #9316c5;
-    text-decoration: none;
-    transition: color 0.3s ease, scale 0.3s ease;
-}
-
-.footertt:hover {
-    color: rgb(255, 255, 255);
-}
-
-.footerig {
-    color: #ff49b0;
-    text-decoration: none;
-    transition: color 0.3s ease, scale 0.3s ease;
-}
-
+.footerdc:hover,
+.footertt:hover,
 .footerig:hover {
     color: white;
 }
@@ -185,4 +124,5 @@ footer {
     display: flex;
     justify-content: center;
     gap: 20px;
+    flex-wrap: wrap;
 }
